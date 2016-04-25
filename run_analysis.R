@@ -8,7 +8,7 @@ unzip(zipfile="./data/Dataset.zip")
 
 #We should see what's inside this data directory, one way is to list the files:
 path_rf <- file.path("./data" , "UCI HAR Dataset")
-files<-list.files(path_rf, recursive=TRUE)
+files <- list.files(path_rf, recursive=TRUE)
 files
 
 #Looking the content of the files, we can see the relations between them, and we conclude
@@ -82,5 +82,5 @@ library(plyr)
 #Calculating mean and outputting
 Data2<-aggregate(. ~subject + activity, Data, mean)
 Data2<-Data2[order(Data2$subject,Data2$activity),]
-write.table(Data2, file = "tidydata.txt",row.name=FALSE)
+write.table(Data2, file = "TheDataClean.txt",row.name=FALSE)
 
