@@ -1,0 +1,20 @@
+#This file lists the variables to be used in run_analysis.R
+
+'fileUrl' is the link for the Data to be used
+'path_rf' is the path to the local downloaded data
+'files' shows the list of files in 'path_rf'
+
+#The following variables open the file:
+'dataActivityTest'  Y_test.txt
+'dataActivityTrain' Y_train.txt
+'dataSubjectTrain'  subject_train.txt
+'dataSubjectTest'   subject_test.txt
+'dataFeaturesTest'  X_test.txt
+'dataFeaturesTrain' X_train.txt
+'activityLabels'    activity_labels.txt
+
+Skipping all the process, 'Data' is the merged files required
+
+'subDataFeaturesNames' is the mean and stardard deviation for each measurement
+
+'Data2' is the mean of subject + activity in 'Data' in a formatted way
